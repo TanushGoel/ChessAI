@@ -1,0 +1,15 @@
+{
+  "arch": "x86_64",
+  "build": "h0a44026_0",
+  "build_number": 0,
+  "depends": [
+    "libcxx >=4.0.1"
+  ],
+  "license": "GPLv3",
+  "license_family": "GPL",
+  "name": "stockfish",
+  "platform": "osx",
+  "subdir": "osx-64",
+  "timestamp": 1556914175587,
+  "version": "10"
+}

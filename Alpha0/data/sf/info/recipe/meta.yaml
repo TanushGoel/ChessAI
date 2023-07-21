@@ -1,0 +1,48 @@
+# This file created by conda-build 3.15.1
+# meta.yaml template originally from:
+# /Users/hccbuild/builds/sh4Y6SWG/0/hcc/hcc-conda-recipes/recipes/stockfish/10, last modified Fri May  3 15:01:23 2019
+# ------------------------------------------------
+
+package:
+    name: stockfish
+    version: '10'
+source:
+    patches:
+        - makefile.patch
+    sha256: c19c5377daa6f92d798849a1295441d987d25a1b9ae44256e19907ee10c63dd3
+    url: https://github.com/official-stockfish/Stockfish/archive/sf_10.tar.gz
+build:
+    number: '0'
+    string: h0a44026_0
+requirements:
+    build:
+        - cctools 895 h7512d6f_0
+        - clang 4.0.1 h662ec87_0
+        - clang_osx-64 4.0.1 h1ce6c1d_16
+        - clangxx 4.0.1 hc9b4283_0
+        - clangxx_osx-64 4.0.1 h22b1bf0_16
+        - compiler-rt 4.0.1 h5487866_0
+        - ld64 274.2 h7c2db76_0
+        - libcxx 4.0.1 h579ed51_0
+        - libcxxabi 4.0.1 hebd6815_0
+        - llvm 4.0.1 hc748206_0
+        - llvm-lto-tapi 4.0.1 h6701bc3_0
+    host:
+        - libcxx 8.0.0 2
+        - libcxxabi 8.0.0 2
+    run:
+        - libcxx >=4.0.1
+test:
+    commands:
+        - stockfish -h
+about:
+    dev_url: https://github.com/official-stockfish/Stockfish
+    home: https://stockfishchess.org
+    license: GPLv3
+    license_family: GPL
+    license_file: Copying.txt
+    summary: Stockfish is a free, powerful UCI chess engine derived from Glaurung
+        2.1.
+extra:
+    copy_test_source_files: true
+    final: true

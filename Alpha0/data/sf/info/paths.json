@@ -1,0 +1,13 @@
+{
+  "paths": [
+    {
+      "_path": "bin/stockfish",
+      "file_mode": "binary",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/var/folders/gl/9rsk3myj3233r3qb5tbn1v4m0000gn/T/tmp.1n3ipYGC/anaconda/conda-bld/stockfish_1556914054279/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_pla",
+      "sha256": "0e80bec54e2b3ce8aa2b05c390e6c3e51486f05c5b90dd829f1b3eab19f2ac34",
+      "size_in_bytes": 322420
+    }
+  ],
+  "paths_version": 1
+}
